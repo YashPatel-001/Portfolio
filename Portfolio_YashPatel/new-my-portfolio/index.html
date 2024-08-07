@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+   <!-- Bootstrap JS and Popper.js (optional but required for some Bootstrap components) -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+   <!-- Include GSAP library -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+   <!-- Include Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+   <link rel="stylesheet" href="style.css">
+
+   <title>Yash's Portfolio</title>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+         <a class="navbar-brand" href="index.html" style="color: white; font-weight: bold;">
+            <span class="orange-square" style="font-weight: bold;">Y</span> ash's Portfolio
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link home-link" href="#section1">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link service-link" href="#section2">Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link about-link" href="#section3">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link skills-link" href="#section4">Skills</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link projects-link" href="#section5">Projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link contact-link" href="#section6">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <section class="firstsection" id="section1">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="firstleftcontainer" id="Cfanimation">
+                  <h1>Hi, It's Me</h1>
+                  <p>I'm <span style="color: #ff7518;">Yash Patel</span></p>
+                  <p>a professional Web Devloper. My main goal is to help & satisfy the local & global
+                     clients by providing web development solutions.</p>
+
+                  <div class="social-media">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                     <i class="fa-brands fa-instagram"></i>
+                     <i class="fa-brands fa-github"></i>
+                     <i class="fa-brands fa-facebook"></i>
+                  </div>
+
+                  <div class="btnhire">
+                     <button type="buttton">Hire me</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="firstimgcard" id="fimganimation">
+                  <div class="card">
+                     <img src="my.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="secondsection" id="section2">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="secondleftcontainer" id="slcontainer">
+                  <h6>My Services</h6>
+                  <h4>What i do for <span>you.</span></h4>
+                  <hr>
+                  <p>"Discover excellence in web development with me. I deliver outstanding websites efficiently and
+                     securely. My expert team ensures high-quality work within deadlines".</p>
+                  <p>I prioritize your online safety and offer competitive pricing. Plus, I provide ongoing upgrade
+                     plans to keep your site cutting-edge. Choose me for unmatched designs and reliable support.</p>
+
+                  <div class="btnview-more">
+                     <button type="submit">View More</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-8">
+               <div class="secondrightcontainer">
+                  <div class="row">
+                     <div class="col-md-6 mb-4">
+                        <div class="card firstcard text-center" id="card1">
+                           <i class="fa-solid fa-code"></i>
+                           <div class="card-body">
+                              <h5>Website Devloper</h5>
+                              <p class="card-text">Elevate Your Online Presence, One Pixel at a Time!</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6 mb-4">
+                        <div class="card secondcard text-center" id="card2">
+                           <i class="fa-solid fa-bug-slash"></i>
+                           <div class="card-body">
+                              <h5>Bug Hunter</h5>
+                              <p class="card-text">Fine-Tuning Excellence: Where Testing Meets Perfection!</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6 mb-4">
+                        <div class="card secondcard text-center" id="card3">
+                           <i class="fa-brands fa-git-alt"></i>
+                           <div class="card-body">
+                              <h5>Git</h5>
+                              <p class="card-text">Git: Pioneering Collaboration, One Commit at a Time.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6 mb-4">
+                        <div class="card firstcard text-center" id="card4">
+                           <i class="fa-solid fa-layer-group"></i>
+                           <div class="card-body">
+                              <h5>Full Stack</h5>
+                              <p class="card-text">Full Stack Developers: Innovating Across Every Layer of Code.</p>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <section class="thirdsection" id="section3">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="firstleftcontainer">
+                  <img src="me_1.jpg" alt="Image">
+               </div>
+            </div>
+            <div class="col-md-8">
+               <div class="thirdrightcontainer">
+                  <h6>LET ME INTRODUCE MY SELF</h6>
+                  <h5>About Me</h5>
+                  <p>Greetings! I'm Yash Patel, a dedicated web developer passionate about crafting seamless digital
+                     experiences. With five and half years of expertise, I specialize in both front-end and back-end
+                     development, transforming creative ideas into user-friendly websites and dynamic web applications.
+                     I thrive on combining functionality with aesthetics, ensuring each project I undertake is visually
+                     appealing, intuitive, and future-proof. Collaborative and client-focused, I am committed to
+                     exceeding expectations and delivering high-quality, scalable, and secure web solutions. Let's work
+                     together to bring your digital projects to life!</p>
+                  <div class="s3btn">
+                     <button type="submit" class="contactbtn" onclick="scrollToContact()">Contact Me</button>
+                     <button type="submit" class="resumebtn" id="Resumebtn">Download Resume</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="fourthsection" id="section4">
+      <div class="s">
+         <h4>Skills</h4>
+         <hr>
+      </div>
+      <div class="skills">
+         <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+               <div class="skill-per" per="90%" style="max-width: 90%"></div>
+            </div>
+         </div>
+
+         <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+               <div class="skill-per" per="65%" style="max-width: 65%"></div>
+            </div>
+         </div>
+
+         <div class="skill">
+            <div class="skill-name">Javascript</div>
+            <div class="skill-bar">
+               <div class="skill-per" per="55%" style="max-width: 55%"></div>
+            </div>
+         </div>
+
+         <div class="skill">
+            <div class="skill-name">PHP</div>
+            <div class="skill-bar">
+               <div class="skill-per" per="95%" style="max-width: 95%"></div>
+            </div>
+         </div>
+
+         <div class="skill">
+            <div class="skill-name">Mysql</div>
+            <div class="skill-bar">
+               <div class="skill-per" per="85%" style="max-width: 85%"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="fifthsection" id="section5">
+      <div class="p">
+         <h4>Projects</h4>
+         <hr>
+      </div>
+
+      <div class="container mt-4">
+         <div class="row">
+            <!-- First Row -->
+            <div class="col-md-4">
+               <div class="card project-card">
+                  <div class="card-body">
+                     <img src="images/E-dairy.png" alt="Project Logo" class="card-img-top project-logo">
+                     <h5 class="card-title">E-commerce</h5>
+                     <p class="card-text">Farm-fresh milk products delivered to your door with a click. Subscribe for
+                        seamless, uninterrupted supply!</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="card project-card">
+                  <div class="card-body">
+                     <img src="images/EduMate.png" alt="Project Logo" class="card-img-top project-logo">
+                     <h5 class="card-title">EduMate</h5>
+                     <p class="card-text">Timetable, mark entry, and instant providing notifications to parent - all in
+                        one hassle-free solution for schools.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="card project-card">
+                  <div class="card-body">
+                     <img src="images/votopia.png" alt="Project Logo" class="card-img-top project-logo">
+                     <h5 class="card-title">Votopia</h5>
+                     <p class="card-text">Vote from any device: mobile, tablet, or computer. No internet? No problem!
+                        Text your vote for easy, accessible voting.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="col-md-4">
+               <div class="card project-card">
+                  <div class="card-body">
+                     <img src="images/SkillPedia.png" alt="Project Logo" class="card-img-top project-logo">
+                     <h5 class="card-title">SkillPedia</h5>
+                     <p class="card-text">SkillPedia: Empower Your Talents, Earn, Fulfill Dreams. Your Platform for
+                        Skill Sharing and Financial Growth!</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="card project-card">
+                  <div class="card-body">
+                     <img src="images/Readly.png" alt="Project Logo" class="card-img-top project-logo">
+                     <h5 class="card-title">Readly</h5>
+                     <p class="card-text">Explore wide range of books, read , listen and watch them!
+                        For Download Please dive into our wide collection through paymet</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="card project-card">
+                  <div class="card-body">
+                     <img src="images/AncientAvenue.png" alt="Project Logo" class="card-img-top project-logo">
+                     <h5 class="card-title">AncientAvenue</h5>
+                     <p class="card-text">Discover Your History, Make Your Story: Ancient Avenue - Unearth Treasures,
+                        Auction Memories.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </section>
+
+   <section class="sixthsection" id="section6">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-4">
+               <div class="sixthleftcontainer">
+                  <h6>Get <span>in</span> touch</h6>
+                  <hr>
+                  <h4>Contact details.</h4>
+                  <p>Feel free to reach out to us - whether you have questions, suggestions, or just want to say hello,
+                     we value your input. Our team is here to assist you with any inquiries or collaborate on exciting
+                     opportunities. We believe in the power of open communication, so don't hesitate to get in touch.
+                     Your feedback is important, and we look forward to building meaningful connections. Click here to
+                     start the conversation, and let's explore the possibilities together.</p>
+
+                  <div class="contact-part">
+                     <div><i><iconify-icon icon="solar:phone-bold"></iconify-icon></i>
+                        <p>Phone:</p>
+                        <p>+91 9327735740</p>
+                     </div>
+                     <div><i><iconify-icon icon="ic:baseline-email"></iconify-icon></i>
+                        <p>E-mail:</p>
+                        <p>yashpatel424743@gmail.com</p>
+                     </div>
+                     <div><i><iconify-icon icon="fluent:fax-16-filled"></iconify-icon></i>
+                        <p>Phone:</p>
+                        <p>+91 9327735740</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-8 contact-form">
+               <div class="sixthrightcontainer">
+                  <form action="msg.php" method="post">
+                     <input type="text" id="name" name="name" placeholder="Your Name" required>
+                     <input type="email" id="email" name="email" placeholder="Your E-mail" required>
+                     <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                        required></textarea>
+                     <button type="submit">Submit</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer>
+      <div class="footer">
+         <div class="footer-first">
+            <h3>Yash's Devloper Portfolio</h3>
+         </div>
+         <div class="footer-second">
+            <ul>
+               <li><a href="#section1">Home</a></li>
+               <li><a href="#section2">Services</a></li>
+               <li><a href="#section3">About</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-third">
+            <ul>
+               <li><a href="#section4">Skills</a></li>
+               <li><a href="#section5">Projects</a></li>
+               <li><a href="#section6">Contact</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-fourth">
+            <input type="text" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+         </div>
+      </div>
+
+      <div class="footer-right">
+         Copyright &#169; yash'sportfolio.com | All rights reserved.
+      </div>
+   </footer>
+
+   <!--<section class="map" id="section6">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="map">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.970158022066!2d72.48065827509879!3d23.244172979019023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c25a045ad121b%3A0x94aefca22f77c923!2sShapath%20height-1!5e0!3m2!1sen!2sin!4v1701769786904!5m2!1sen!2sin"
+                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+-->
+
+   <script src="script.js"></script>
+
+   <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      function animateOnScroll(element, animationOptions, triggerOptions) {
+         gsap.from(element, {
+            ...animationOptions,
+            scrollTrigger: {
+               trigger: element,
+               start: 'top 80%',
+               ...triggerOptions,
+            },
+         });
+   }
+
+      function defineAnimations() {
+         // Animation for Cfanimation
+         animateOnScroll("#Cfanimation", { x: -200, opacity: 0, duration: 1, ease: "power2.out" });
+
+         // Animation for fimganimation
+         animateOnScroll("#fimganimation", { x: 200, opacity: 0, duration: 1, ease: "power2.out" });
+
+         // Animation for slcontainer
+         animateOnScroll("#slcontainer", { y: 100, opacity: 0, duration: 1, ease: "power2.out" });
+
+         // Animation for secondrightcontainer cards
+         animateOnScroll("#card4", { y: 200, z: 150, opacity: 0, duration: 1, ease: "power2.out" });
+         animateOnScroll("#card1", { y: 200, z: 150, opacity: 0, duration: 1, ease: "power2.out" });
+         animateOnScroll("#card3", { y: 200, z: 150, opacity: 0, duration: 1, ease: "power2.out" });
+         animateOnScroll("#card2", { y: 200, z: 150, opacity: 0, duration: 1, ease: "power2.out" });
+      }
+
+      // Call defineAnimations function when scrolling
+      ScrollTrigger.create({
+         trigger: "body",
+         start: "top center",
+         onEnter: defineAnimations,
+      });
+   </script>
+
+   </script>
+
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- PHP CODE GOES HERE-->
